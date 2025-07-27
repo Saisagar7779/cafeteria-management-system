@@ -1,0 +1,52 @@
+<article class="MenuPage">
+
+    <h1 class="MenusPage__title"> Item Categories </h1>
+
+    <section class="MenuPage__listing">
+        <% Menu.all.order(:name).each do |menu| %>
+            <div class="Menu__block" >
+
+                <div class="Menu__activate" >
+
+                    <% if menu.is_active %>
+                        <%= form_with(url: "/menus/activate/#{menu.id}", method: "PUT", class: "Menu__activateForm") do |activation_form| %>
+                            <%= content_tag(:button, class: "Menu__activateButton Menu__activeButton") do %>
+                                <span class="Menu__activeContent">
+                                    <p class="Menu__nameText Menu__active"> <%= menu.name %> </p>
+                                    <p class="Menu__activeText Menu__active"> LIVE </p>
+                                </span>
+                            <% end %>
+                        <% end %>
+
+
+
+                    <% else %>
+                        <%= form_with(url: "/menus/activate/#{menu.id}", method: "PUT", class: "Menu__activateForm") do |activation_form| %>
+                            <%= activation_form.button(menu.name, value: "activate", class: "Menu__activateButton", :onclick=>"this.form.submit()") %>
+                        <% end %>
+                    <% end %>
+
+                </div>
+
+                <div class="Menu__edit">
+                    <%= link_to(image_tag("edit.png", class: "Menu__editIcon"),
+                                menu_path(menu.id),
+                                class: "Menu__editLink") %>
+                </div>
+
+                <div class="Menu__delete">
+                  <%= link_to(image_tag("trash-can-outline.png", class: "Menu__deleteIcon"),
+                              "/menus/#{menu.id}",
+                              method: "DELETE",
+                              class: "Menu__deleteLink") %>
+                </div>
+
+            </div>
+        <% end %>
+    </section>
+
+    <section class="MenuPage__addNew">
+        <%= link_to("+ Add a new menu", new_menu_path, class: "MenuPage__addLink") %>
+    </section>
+
+</article>

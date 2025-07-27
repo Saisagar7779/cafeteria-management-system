@@ -1,0 +1,589 @@
+.MenuPage{
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.MenusPage__title {
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    font-size: 20px;
+    color: #453C52;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.MenuPage__listing {
+    margin-top: 40px;
+}
+
+.Menu__block {
+    display: flex;
+    box-shadow: 0 2px 4px 0 #b5b8bd;
+    transition: 0.3s;
+    width: 100%;
+    margin: 20px 0px;
+    height: 64px;
+}
+
+.Menu__activate{
+    margin: 0px 0px;
+    width: 68%;
+}
+
+.Menu__activateForm{
+  height: 100%;
+}
+
+.Menu__edit{
+    background: #014462b0;
+    border: 0 0 0 2px;
+    width: 16%;
+}
+
+.Menu__delete{
+    background: #dc3c31b0;
+    border: 0 0 0 2px;
+    width: 16%;
+}
+
+.Menu__activateButton{
+    padding: 10px 20px;
+    text-align: left;
+    background: #F1F3F4;
+    color: black;
+    border: 1px transparent;
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: inherit;
+    height: 100%;
+}
+
+.Menu__activeButton{
+    background: #66b366;
+}
+
+.Menu__activateButton:hover{
+    background-color: #b7dfb9;
+}
+
+.Menu__activeButton:hover{
+    background: #a6a1a1;
+}
+
+.Menu__activate:hover, .Menu__edit:hover, .Menu__delete:hover {
+    box-shadow: 0 4px 8px 0 #b5b8bd;
+}
+
+.Menu__nameText {
+    padding: 10px 0px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.Menu__activeContent{
+    background: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Menu__active {
+    background: inherit;
+}
+
+.Menu__activeText {
+    background: inherit;
+    color: #ca3127;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+.Menu__nameText{
+  color: white;
+}
+
+.Menu__editLink{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Menu__editIcon{
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Menu__deleteLink{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Menu__deleteIcon{
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.MenuPage__addNew {
+    margin-top: 40px;
+    display: flex;
+    justify-content: right;
+}
+
+.MenuPage__addLink {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: #66b366;
+    border-right: 0px;
+    border-left: auto;
+}
+
+.CreateMenuPage {
+    display: flex;
+    width: 500px;
+    margin: 0px auto;
+}
+
+.CreateMenuPage__main {
+    max-width: 500px;
+    margin: 40px auto;
+    position: static;
+    z-index: 1;
+}
+
+.CreateMenuPage__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #262927;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.CreateMenuPage__subtitle {
+    font-size: 18px;
+    color: #453C52;
+    margin-left: 0px;
+}
+
+.CreateMenu__section {
+    margin: 40px auto;
+}
+
+.CreateMenu__textField {
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CreateMenu__name {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 6px 4px;
+    width: 60%;
+    color: #424242ee;
+    outline: 0;
+    border-width: 0 0 3px 0;
+    border-color: #000000;
+    text-align: center;
+}
+
+.CreateMenu__selections{
+  width: max-content;
+  margin: 0 auto;
+}
+
+.CreateMenu__selectedItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 6px 0;
+}
+
+.CreateMenu__selectedName{
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242dd;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.CreateMenu__price{
+  width: 60px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-width: 0 0 2px 0;
+}
+
+.CreateMenu__unselectLink{
+  margin-left: 20px;
+}
+
+.CreateMenu__name:focus {
+    border-color: #29B6F6;
+}
+
+.CreateMenu__submit {
+    width: 60%;
+    margin: 10px auto;
+    border: 1px transparent;
+    border-radius: 4px;
+    padding: 8px 16px;
+    background: #48BB78;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.CreateMenu__submitField {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.CreateMenu__itemField {
+    display: flex;
+    justify-content: right;
+}
+
+.CreateMenu__addButton {
+    font-weight: 600;
+    font-size: 16px;
+    color: #66b366;
+    padding: 6px;
+    background: transparent;
+    border: 1px transparent;
+    outline: 0px;
+}
+
+.PopupForm__section {
+    display: none;
+    position: fixed;
+    background: #2c3e50;
+    opacity: 0.7;
+    color: #ffffff;
+    right: 0;
+    top: 16%;
+    height: 68%;
+    width: 26%;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 10;
+    box-shadow: -6px -6px 0 #b5b8bd;
+}
+
+.PopupForm__content {
+    height: max-content;
+    margin: auto 20px;
+}
+
+.PopupForm__title {
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+    margin: 40px 20px;
+    max-width: max-content;
+}
+
+.CreateMenuItem__textField, .CreateMenuItem__selectionField {
+    margin: 10px 20px;
+}
+
+.CreateMenuItem__selectionField label{
+    padding-right: 20px;
+}
+
+.CreateMenuItem__submitField {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.CreateMenuItem__label {
+    display: block;
+    margin-bottom:10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.CreateMenuItem__textInput {
+    background-color: transparent;
+    width: 60%;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 2px 8px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.CreateMenuItem__longTextInput{
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.CreateMenuItem__submit{
+    padding: 6px;
+    width: 90%;
+    margin: 20px auto;
+    background: #127912;
+    border: 1px transparent;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.SelectMenuItem__selectionField{
+    margin: 10px 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+.SelectMenuItem__info{
+    margin: 100px auto;
+    max-width: max-content;
+}
+
+.SelectMenuItem__infoText{
+    font-size: 16px;
+    color: #bfbdb6;
+}
+
+.SelectMenuItem__selectionField label{
+    margin-right: 20px;
+}
+
+.SelectMenuItem__submitField {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.SelectMenuItem__submit{
+    padding: 6px;
+    width: 90%;
+    margin: 20px auto;
+    background: #127912;
+    border: 1px transparent;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.UpdateMenuPage {
+    display: flex;
+    width: 600px;
+    margin: 0px auto;
+}
+
+.UpdateMenuPage__main {
+    width: 100%;
+    margin: 20px auto;
+    position: static;
+    z-index: 1;
+}
+
+.UpdateMenuPage__colsSection{
+  margin-top: 30px;
+  display: flex;
+  border: 4px #325875aa;
+  border-radius: 10px;
+  border-style: solid;
+  width: 100%;
+}
+
+.UpdateMenuPage__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #262927;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.UpdateMenuPage__subtitle {
+    font-size: 16px;
+    color: #453C52;
+    width: max-content;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.UpdateMenu__section {
+    margin: 20px auto;
+    padding: 10px 40px;
+    width: 60%;
+}
+
+.UpdateMenu__textField {
+    width: inherit;
+    margin: 0px auto;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UpdateMenu__name {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 6px 4px;
+    width: 60%;
+    color: #424242ee;
+    outline: 0;
+    border-width: 0 0 3px 0;
+    border-color: #000000;
+    text-align: center;
+}
+
+.UpdateMenu__name:focus {
+  border-color: #29B6F6;
+}
+
+.UpdateMenu__selectedItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  margin: 10px;
+  padding: 6px 0;
+}
+
+.UpdateMenu__selections{
+  width: max-content;
+  margin: 0 auto;
+}
+
+.UpdateMenu__selectedName{
+  font-weight: 600;
+  font-size: 14px;
+  color: #424242dd;
+  width: 100px;
+}
+
+.UpdateMenu__price{
+  width: 60px;
+  margin-left: 10px;
+  font-size: 15px;
+  border-width: 0 0 2px 0;
+}
+
+.UpdateMenu__unselectLink{
+  margin: 0px;
+}
+
+.UpdateMenu__itemField {
+    display: flex;
+    justify-content: right;
+}
+
+.UpdateMenu__addButton {
+    font-weight: 600;
+    font-size: 16px;
+    color: #325875;
+    padding: 6px;
+    background: transparent;
+    border: 1px transparent;
+    outline: 0px;
+}
+
+.UpdateMenu__submitField {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.UpdateMenu__submit{
+    padding: 6px;
+    width: 60%;
+    margin: 20px auto;
+    background: #325875;
+    border: 1px transparent;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.UpdateMenu__existSection {
+    padding: 50px 40px;
+    transition: 0.3s;
+    width: 40%;
+    background: #325875aa;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+.UpdateMenu__existTitle {
+    font-weight: 600;
+    letter-spacing: 0.14px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.UpdateMenuPage__listing {
+    margin-top: 40px;
+}
+
+.UpdateMenu__existItem{
+  display: flex;
+  align-items: center;
+  margin: 10px 4px;
+}
+
+.UpdateMenu__existInfo{
+    margin: 0px auto;
+    width: 120px;
+}
+
+.UpdateMenu__existText {
+    padding: 0px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.UpdateMenu__delete{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #dc3c31b0;
+    width: 10%;
+}
+
+.UpdateMenu__deleteIcon{
+    height: 100%;
+}

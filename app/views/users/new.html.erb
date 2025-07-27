@@ -1,0 +1,12 @@
+<article class="SignupPage">
+
+    <h1 class="SignupPage__title">Welcome!</h1>
+    <h2 class="SignupPage__subtitle">Let's get to know you...</h1>
+
+    <%= render partial: "signupfields-section", locals:{
+        submission_url: "/users",
+        signup_text: "Sign Up",
+        signup_class: "Signup"
+    } %>
+
+</article>

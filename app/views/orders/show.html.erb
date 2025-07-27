@@ -1,0 +1,43 @@
+<article class="OrderInvoicePage">
+
+    <h1 class="OrderInvoicePage__title"> Order Invoice </h1>
+    <h3 class="OrderInvoicePage__subtitle">
+      <% if @order.cancelled? %>
+        <p class=OrderAdminInvoicePage__subtitlePara>This order was <span class="boldText">cancelled</span> on <%= @order.handle_date %><p>
+        <p class=OrderAdminInvoicePage__subtitlePara><%= "by the #{@order.handle_user.role.humanize}" %></p>
+        <p class=OrderAdminInvoicePage__subtitlePara><span class="boldText">Billing Clerk:</span><%= @order.handle_user.name %></p>
+      <% elsif @order.delivered? %>
+        <p class=OrderAdminInvoicePage__subtitlePara>This order was <span class="boldText">delivered</span> on <%= @order.handle_date %></p>
+        <p class=OrderAdminInvoicePage__subtitlePara><span class="boldText">Billing Clerk:</span><%= @order.handle_user.name %></p>
+      <% else %>
+        Anticipate, while we prepare your order
+      <% end %>
+    </h3>
+
+    <section class="OrderInvoicePage__listing">
+        <% @order_items.each do |order_item| %>
+            <div class="OrderInvoice__block" >
+
+                <div class="OrderInvoice__info" >
+                        <span class="OrderInvoice__infoHead">
+                            <span class="OrderInvoice__infoLeft">
+                                <p class="OrderInvoice__nameText"> <%= order_item.menu_item.item.name %> </p>
+                                <p class="OrderInvoice__multiplier"> X <%= order_item.quantity %> </p>
+                            </span>
+                            <p class="OrderInvoice__priceText"> Rs.<%= order_item.menu_item.price*order_item.quantity %> </p>
+                        </span>
+                </div>
+
+            </div>
+        <% end %>
+
+        <div class="OrderInvoice__total">
+            <label class="OrderInvoice__totalLabel">Grand Total: </label>
+            <span class="OrderInvoice__total">
+                <p class="OrderInvoice__totalText"> Rs.<%= @order.total_price%> </p>
+            </span>
+        </div>
+
+    </section>
+
+</article>
